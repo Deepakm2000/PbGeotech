@@ -1,0 +1,23 @@
+{
+  "name": "pbgeotech",
+  "version": "1.0.0",
+  "main": "geotech.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && html-minifier geotech.html -o dist/index.html && cssnano styles/style.css dist/style.css",
+    "build:css": "npx cssnano styles/style.css -o dist/style.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cssnano": "^6.1.2",
+    "html-minifier": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "vinyl-sourcemaps-apply": "^0.2.1"
+  }
+}
